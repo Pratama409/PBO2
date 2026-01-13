@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="841aad8e-0da5-4f00-a157-41d14e57b52d">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM tbl_laporan_ktp;]]>
+	</queryString>
+	<field name="nik" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="rt" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="rw" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="no_telp" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="desa" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tgl_input" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="id_user" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="20" uuid="1e99907a-dfee-4f39-9d0d-da4e0e962b6e"/>
+				<text><![CDATA[nik]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="0" width="100" height="20" uuid="aca5b4b0-d9e7-4338-a80a-29ab1ede0af8"/>
+				<text><![CDATA[nama]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="200" y="0" width="100" height="20" uuid="1eb924cc-a816-433d-8167-88b812217ab6"/>
+				<text><![CDATA[rt]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="0" width="100" height="20" uuid="dcbfb9e3-6a89-4543-90d1-1dad04829063"/>
+				<text><![CDATA[rw]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="400" y="0" width="100" height="20" uuid="02e5e987-ba80-4b0f-aa37-b0bb90a4b9e8"/>
+				<text><![CDATA[no_telp]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="20" width="100" height="20" uuid="2fd67fb5-1d91-45bc-89d4-fa701a01235e"/>
+				<text><![CDATA[desa]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="20" width="100" height="20" uuid="90caaf5e-25dc-43cc-9a93-16b27ec2f73b"/>
+				<text><![CDATA[tgl_input]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="200" y="20" width="100" height="20" uuid="da572162-060d-4d27-a686-dad376c6a320"/>
+				<text><![CDATA[id_user]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="100" height="20" uuid="7742d010-d5b9-4204-a289-23ea30dfe5b5"/>
+				<textFieldExpression><![CDATA[$F{nik}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="0" width="100" height="20" uuid="8179d3eb-2d27-4895-8e48-5937b430e54f"/>
+				<textFieldExpression><![CDATA[$F{nama}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="200" y="0" width="100" height="20" uuid="f3edc807-dfb1-478e-ade0-3c778e9da18c"/>
+				<textFieldExpression><![CDATA[$F{rt}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="0" width="100" height="20" uuid="ddbff5a1-31c0-4f42-bb42-99b740a9dfae"/>
+				<textFieldExpression><![CDATA[$F{rw}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="400" y="0" width="100" height="20" uuid="893cbd43-389a-4b40-b3cc-f5354a0f8cb8"/>
+				<textFieldExpression><![CDATA[$F{no_telp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="20" width="100" height="20" uuid="e7112a4d-d96a-45f7-bf2d-406ac8e9fa99"/>
+				<textFieldExpression><![CDATA[$F{desa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="20" width="100" height="20" uuid="4bbb7650-4c4f-4c33-8886-da034ba7d38d"/>
+				<textFieldExpression><![CDATA[$F{tgl_input}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="200" y="20" width="100" height="20" uuid="44ec3b28-ac43-4547-8a27-600698fc1eec"/>
+				<textFieldExpression><![CDATA[$F{id_user}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
